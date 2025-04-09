@@ -37,6 +37,8 @@ public class TiendaRopa {
                     descuento = subtotal * 0.10;
                 } else if (cantidad > 4) {
                     descuento = subtotal * 0.15;
+                } else {
+                    descuento = 0; // No hay descuento para 1 o 2 unidades
                 }
 
                 double subtotalConDescuento = subtotal - descuento;
